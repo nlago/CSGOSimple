@@ -1,5 +1,4 @@
 #include "aimbot.h"
-#include "autowall.h"
 #include "helpers/math.hpp"
 float RandomFloat(float a, float b) {
 	float random = ((float)rand()) / (float)RAND_MAX;
@@ -165,18 +164,27 @@ C_BasePlayer* Aimbot::GetClosestPlayer(CUserCmd* cmd, int &bestBone)
 			if (fov > GetFov()) {
 				continue;
 			}
+
+
+			//replaced this after removing awall...
+
 			if (!g_LocalPlayer->CanSeePlayer(player, eVecTarget)) {
-				if (!settings.autowall) {
+				/*if (!settings.autowall) {
 					continue;
 				}
 				damage = Autowall::GetDamage(eVecTarget);
 				if (damage < settings.min_damage) {
 					continue;
-				}
+				}*/
+				continue;
 			}
-			if ((settings.priority == 1 || settings.priority == 2) && damage == 0.f) {
-				damage = Autowall::GetDamage(eVecTarget);
-			}
+
+			//also commented this block...
+
+			//if ((settings.priority == 1 || settings.priority == 2) && damage == 0.f) {
+			//	damage = Autowall::GetDamage(eVecTarget);
+			//}
+
 			health = player->m_iHealth() - damage;
 			if (settings.check_smoke && IsLineGoesThroughSmoke(pVecTarget, eVecTarget)) {
 				continue;

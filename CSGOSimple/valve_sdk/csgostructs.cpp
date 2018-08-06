@@ -201,7 +201,7 @@ int C_BasePlayer::GetSequenceActivity(int sequence)
 
 CBasePlayerAnimState *C_BasePlayer::GetBasePlayerAnimState()
 {
-	static int basePlayerAnimStateOffset = 0x3874;
+	static int basePlayerAnimStateOffset = 0x3884;
 	return *(CBasePlayerAnimState**)((DWORD)this + basePlayerAnimStateOffset);
 }
 

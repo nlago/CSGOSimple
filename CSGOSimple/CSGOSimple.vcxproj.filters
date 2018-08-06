@@ -120,9 +120,6 @@
     <ClCompile Include="UI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="autowall.cpp">
-      <Filter>Source Files\features</Filter>
-    </ClCompile>
     <ClCompile Include="backtrack.cpp">
       <Filter>Source Files\features</Filter>
     </ClCompile>
@@ -134,12 +131,6 @@
     </ClCompile>
     <ClCompile Include="valve_sdk\kit_parser.cpp">
       <Filter>Source Files\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="skins.cpp">
-      <Filter>Source Files\features</Filter>
-    </ClCompile>
-    <ClCompile Include="configmanager.cpp">
-      <Filter>Source Files\features</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -386,9 +377,6 @@
     <ClInclude Include="droid.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="autowall.h">
-      <Filter>Header Files\features</Filter>
-    </ClInclude>
     <ClInclude Include="backtrack.h">
       <Filter>Header Files\features</Filter>
     </ClInclude>
@@ -401,17 +389,11 @@
     <ClInclude Include="valve_sdk\item_definitions.hpp">
       <Filter>Header Files\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="skins.h">
-      <Filter>Header Files\features</Filter>
-    </ClInclude>
     <ClInclude Include="valve_sdk\kit_parser.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="helpers\utils.hpp">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="configmanager.h">
-      <Filter>Header Files\features</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

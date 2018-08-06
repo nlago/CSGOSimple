@@ -94,9 +94,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="aimbot.cpp" />
-    <ClCompile Include="autowall.cpp" />
     <ClCompile Include="backtrack.cpp" />
-    <ClCompile Include="configmanager.cpp" />
     <ClCompile Include="features\bhop.cpp" />
     <ClCompile Include="features\chams.cpp" />
     <ClCompile Include="features\glow.cpp" />
@@ -112,7 +110,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="options.cpp" />
-    <ClCompile Include="skins.cpp" />
     <ClCompile Include="UI.cpp" />
     <ClCompile Include="valve_sdk\csgostructs.cpp" />
     <ClCompile Include="valve_sdk\item_definitions.cpp" />
@@ -132,9 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aimbot.h" />
-    <ClInclude Include="autowall.h" />
     <ClInclude Include="backtrack.h" />
-    <ClInclude Include="configmanager.h" />
     <ClInclude Include="datamap.hpp" />
     <ClInclude Include="droid.hpp" />
     <ClInclude Include="features\bhop.hpp" />
@@ -142,7 +137,6 @@
     <ClInclude Include="features\glow.hpp" />
     <ClInclude Include="features\visuals.hpp" />
     <ClInclude Include="helpers\utils.hpp" />
-    <ClInclude Include="skins.h" />
     <ClInclude Include="helpers\input.hpp" />
     <ClInclude Include="helpers\math.hpp" />
     <ClInclude Include="helpers\vfunc_hook.hpp" />

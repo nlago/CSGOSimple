@@ -9,7 +9,6 @@
 #include "features/chams.hpp"
 #include "features/visuals.hpp"
 #include "features/glow.hpp"
-#include "skins.h"
 #include "aimbot.h"
 #include "backtrack.h"
 #pragma intrinsic(_ReturnAddress)  
@@ -262,11 +261,26 @@ namespace Hooks
 
 		return oDoPostScreenEffects(g_ClientMode, a1);
 	}
+
+	//auto __stdcall vmt_hooks::hk_lockcursor() -> void
+	//{
+	//	static auto o_lockcursor = surface_vmt.original< void(__thiscall*)(void* pthis) >(67);
+
+	//	if (gui->is_active())
+	//	{
+	//		sdk::interfaces::surface->UnlockCursor();
+	//		return;
+	//	}
+	//	o_lockcursor(sdk::interfaces::surface);
+	//}
+
+	//surface_vmt.hook_table(sdk::interfaces::surface);
+	//surface_vmt.hook(67, hk_lockcursor);
+
 	//--------------------------------------------------------------------------------
 	void __stdcall hkFrameStageNotify(ClientFrameStage_t stage)
 	{
 		static auto ofunc = hlclient_hook.get_original<FrameStageNotify>(index::FrameStageNotify);
-		Skins::OnFrameStageNotify(stage);
 		ofunc(g_CHLClient, stage);
 	}
 	//--------------------------------------------------------------------------------
